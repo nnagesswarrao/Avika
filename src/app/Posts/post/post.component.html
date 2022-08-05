@@ -1,0 +1,64 @@
+
+
+
+
+
+<button (click)="GetAll()">
+    Show Data
+</button> 
+<button (click)="Hide()">Hide Data</button>
+
+<input type="text" name="Username" [(ngModel)]="Username">
+
+<button (click)="Search()">Search</button>
+
+<button (click)="Add()">Add data</button>
+<div *ngIf="loading">
+
+<table>
+    <thead><tr>Employee data</tr></thead>
+    <tbody>
+        <tr><td>Id</td><td><input type="text" [(ngModel)]="id"></td></tr>
+        <tr><td>Name</td><td><input type="text" [(ngModel)]="name"></td></tr>
+        <tr><td>Department</td><td><input type="text" [(ngModel)]="depart"></td></tr>
+        <tr><td>Phone</td><td><input type="text" [(ngModel)]="phone"></td></tr>
+        
+    </tbody>
+</table>
+<button (click)="SubmitData()">submit</button>
+
+</div>
+
+<div *ngIf="Loading">
+<table border="1" width="100%" style="text-align: center;">
+    <thead>
+        <tr>
+            
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Phone</th>
+            <th>Updating</th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let posts of Emp">
+            <td>
+       {{posts.id}}
+            </td>
+            <td>
+                {{posts.name}}
+            </td>
+            <td style="text-align: left;">
+                {{posts.depart}}
+            </td>
+            <td>{{posts.phone}}</td>
+            <td><button (click)="UpDate(posts.id, posts.name,posts.depart,posts.phone)">Edit</button></td>
+            <td><button (click)="Remove(posts.id)">Delete</button></td>
+        </tr>
+    </tbody>
+    
+</table>
+
+</div>

@@ -1,0 +1,27 @@
+<table border="1" width="100%" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Emp of emp">
+            <td>
+{{Emp.id}}
+            </td>
+            <td>
+                {{Emp.name}}
+            </td>
+            <td>
+                {{Emp.Phone}}
+            </td>
+            <td>
+               {{Emp.City}} 
+            </td>
+        </tr>
+    </tbody>
+    
+</table>

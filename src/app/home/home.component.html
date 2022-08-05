@@ -1,0 +1,11 @@
+<p>home works!</p>
+
+
+<a routerLink='/lazy-loading'>Lazy-loading</a>
+
+<ul>
+
+    <li *ngFor="let item of Emp" [routerLink]="['show/',item.id]">{{item.name}}</li>
+    
+        
+    </ul>

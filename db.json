@@ -1,0 +1,28 @@
+{
+  "emp": [
+    {
+      "id": "2",
+      "name": "Avika",
+      "depart": "Adminstration",
+      "phone": "9000919041"
+    },
+    {
+      "id": "3",
+      "name": "Arjun",
+      "depart": "Executive",
+      "phone": "9515302024"
+    },
+    {
+      "id": "4",
+      "name": "Prasanthi",
+      "depart": "Housing",
+      "phone": "9000919041"
+    },
+    {
+      "id": "5",
+      "name": "Ramu",
+      "depart": "Legal",
+      "phone": "9704162169"
+    }
+  ]
+}
